@@ -9,7 +9,15 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
+#continer {
+  width: 100%;
+  max-width: 580px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+
 /*O root é o "padrão"*/
 :root {
   --text-color: white;
@@ -152,4 +160,13 @@ ul li a:hover {
 }
 #social-links a:hover {
   background-color: var(--stroke-color-hover);
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-mobile.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
